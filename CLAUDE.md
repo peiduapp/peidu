@@ -44,6 +44,8 @@ https://pinduapp.github.io/pindu/. It stays public and separate from the private
 
 - **Short.** A headline, one line, and at most two bullets per feature; Help answers in one or
   two lines. Show with an example or a screenshot instead of explaining. Say each thing once.
+- **No lone words.** Headings break between sentences, never inside one; the hero headline is
+  one sentence per line at every width. Check phone (320–430px) and desktop (1024–1440px).
 
 ## Working with the owner
 

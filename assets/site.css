@@ -54,6 +54,12 @@ body {
 
 a { color: var(--accent); }
 
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+a[href^="mailto:"] { white-space: nowrap; }
+/* Keeps a short phrase on one line when it fits; used to break headings between sentences. */
+.unit { display: inline-block; }
+
 img { max-width: 100%; height: auto; }
 
 .wrap {
@@ -92,14 +98,15 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: -0.01em;
+  padding: 7px 0;
 }
 .brand img { width: 30px; height: 30px; border-radius: 8px; }
 
-.site-nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.site-nav { display: flex; gap: 2px; flex-wrap: wrap; margin-right: -12px; }
 .site-nav a {
   text-decoration: none;
   color: var(--muted);
-  padding: 6px 10px;
+  padding: 10px 12px;
   border-radius: 8px;
   font-size: 0.95rem;
 }
@@ -118,12 +125,17 @@ img { max-width: 100%; height: auto; }
   .hero { grid-template-columns: 1.1fr 0.9fr; padding: 64px 0 80px; }
 }
 
+.hero-text { container-type: inline-size; }
 .hero h1 {
-  font-size: clamp(2.2rem, 4.6vw, 3.15rem);
-  line-height: 1.08;
+  /* Each sentence gets its own line. The size follows the text column so
+     "You can already speak it." fits on one line at every width. */
+  font-size: clamp(1.9rem, 4.6vw, 3.15rem);
+  font-size: min(3.3rem, 8.9cqi);
+  line-height: 1.1;
   letter-spacing: -0.025em;
   margin: 0 0 18px;
 }
+.hero h1 .line1, .hero h1 .line2 { display: block; }
 .hero h1 .line2 { color: var(--accent); }
 
 .hero .lead {
@@ -161,7 +173,7 @@ img { max-width: 100%; height: auto; }
 /* Phone frame around raw screenshots */
 
 .phone {
-  width: min(320px, 78vw);
+  width: min(300px, 70vw);
   margin: 0 auto;
   background: var(--bezel);
   border-radius: 46px;
@@ -174,7 +186,11 @@ img { max-width: 100%; height: auto; }
   border-radius: 37px;
   background: #f5f5f7;
 }
-.phone.small { width: min(280px, 72vw); border-radius: 42px; }
+.phone.small { width: min(270px, 62vw); border-radius: 42px; }
+@media (min-width: 860px) {
+  /* Whole phone visible above the fold: the screenshots are 0.46 wide per unit of height. */
+  .hero .phone { width: clamp(240px, calc((100svh - 150px) * 0.46), 320px); }
+}
 .phone.small img { border-radius: 33px; }
 
 /* Feature blocks */
@@ -183,9 +199,9 @@ img { max-width: 100%; height: auto; }
 
 .feature {
   display: grid;
-  gap: 32px;
+  gap: 28px;
   align-items: center;
-  padding: 56px 0;
+  padding: 48px 0;
 }
 .feature + .feature { border-top: 1px solid var(--line); }
 
@@ -261,6 +277,7 @@ img { max-width: 100%; height: auto; }
 .privacy-block .card { max-width: 760px; margin: 0 auto; }
 .privacy-block h2 {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin: 0 0 14px;
 }
@@ -287,6 +304,7 @@ img { max-width: 100%; height: auto; }
 .premium-block { border-top: 1px solid var(--line); padding: 72px 0; }
 .premium-block h2 {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin: 0 0 32px;
   text-align: center;
@@ -310,16 +328,17 @@ img { max-width: 100%; height: auto; }
 .site-footer {
   border-top: 1px solid var(--line);
   margin-top: 24px;
-  padding: 32px 0 48px;
+  padding: 22px 0 40px;
   color: var(--muted);
   font-size: 0.92rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 12px 24px;
+  align-items: center;
+  gap: 4px 24px;
 }
-.site-footer nav { display: flex; flex-wrap: wrap; gap: 16px; }
-.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.site-footer a { color: var(--muted); text-decoration: none; display: inline-block; padding: 10px 0; }
 .site-footer a:hover { color: var(--accent); }
 
 /* Text pages: Help, Privacy, About */
@@ -346,7 +365,8 @@ img { max-width: 100%; height: auto; }
 
 .credits { margin-bottom: 20px; }
 .credits dl { margin: 0; }
-.credits dt { font-weight: 600; margin-top: 16px; }
+.credits dt { font-weight: 600; margin-top: 12px; }
+.credits dt a { display: inline-block; padding: 6px 0; }
 .credits dd { margin: 2px 0 0; color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
