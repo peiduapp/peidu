@@ -3,49 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pindu — Support</title>
-<style>
-  :root { --accent: #4651B0; --bg: #ffffff; --fg: #1a1a1f; --muted: #6b6b76; --card: #f4f4f8; }
-  @media (prefers-color-scheme: dark) {
-    :root { --accent: #A2ABF2; --bg: #121216; --fg: #ececf1; --muted: #9a9aa6; --card: #1e1e26; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         background: var(--bg); color: var(--fg); line-height: 1.7; }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
-  a.back { color: var(--accent); text-decoration: none; font-size: .95rem; }
-  h1 { font-size: 2rem; margin: 24px 0 8px; letter-spacing: -0.02em; }
-  h2 { font-size: 1.15rem; margin: 32px 0 10px; }
-  p { margin: 0 0 18px; }
-  ul { margin: 0 0 18px; padding-left: 20px; }
-  li { margin-bottom: 10px; }
-  a { color: var(--accent); }
-  .contact { background: var(--card); border-radius: 14px; padding: 18px 22px; margin-top: 32px; }
-  .credits { color: var(--muted); font-size: .9rem; }
-</style>
+<title>Pindu Help</title>
+<meta name="description" content="Short answers on reading, listening, Closer Look, fixing a character, Premium, and getting in touch.">
+<meta name="theme-color" content="#4651B0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121216" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <div class="wrap">
-    <a class="back" href="index.html">← Pindu</a>
-    <h1>Pindu — Support</h1>
-    <p>Pindu shows pinyin and English for Chinese text using your camera, photos, or typed/pasted text. Everything runs on your device.</p>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
 
-    <h2>Getting started</h2>
-    <ul>
-      <li><strong>Camera tab:</strong> point at Chinese text to see pinyin and English. Tap any word for its reading, meaning, and to hear it spoken.</li>
-      <li><strong>Text tab:</strong> type or paste Chinese text to read it.</li>
-      <li><strong>Settings</strong> (gear icon) → “How to use” for a guided tour.</li>
-    </ul>
+  <header class="site-header">
+    <a class="brand" href="./"><img src="assets/img/icon-256.png" alt="" width="30" height="30">Pindu</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="support.html" aria-current="page">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-    <h2>Pindu Premium</h2>
-    <p>Pindu Premium (one-time purchase) adds Simplified⇄Traditional conversion, Closer Look (a stronger scan for hard pages), and saved readings with export. Already purchased? Settings → Restore Purchases.</p>
+  <main id="main" class="prose">
+    <h1>Help</h1>
 
-    <div class="contact">
-      Need help? Email <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a> and we'll get back to you.
+    <h2 id="read">How do I read something?</h2>
+    <p>Point the camera, tap the photo icon for a picture or screenshot, or tap the text icon to paste. Tap the shutter to freeze a page; hold it for <a href="#closer-look">Closer Look</a>.</p>
+
+    <h2 id="hear">How do I hear it?</h2>
+    <p>Tap a word, tap ▶ beside a sentence, or tap <kbd>Play all</kbd>. Voice and speed are in Settings. Pinyin is coloured by tone: <span class="py"><span class="t1">mā</span> <span class="t2">má</span> <span class="t3">mǎ</span> <span class="t4">mà</span> <span class="t0">ma</span></span>.</p>
+
+    <h2 id="closer-look">What is Closer Look?</h2>
+    <p>A stronger scan for small print, dense pages, and Zhuyin books. Hold the shutter about one second. Dotted underlines mark characters to check against the page.</p>
+
+    <h2 id="fix">Pindu misread a character.</h2>
+    <p>Tap the word, then <kbd>Edit</kbd>. Pick a suggestion, type how it sounds (<em>jian</em>), or delete it.</p>
+
+    <h2 id="premium">What does Premium include?</h2>
+    <p>Unlimited Closer Look, Simplified ⇄ Traditional, and unlimited saves with export. One-time purchase, no subscription. Reading, pinyin, English, and speech stay free. You get 10 Closer Looks and 10 saves to try first.</p>
+
+    <h2 id="restore">New phone, no Premium?</h2>
+    <p>Settings → <kbd>Restore Purchases</kbd>, signed in to the same Apple Account.</p>
+
+    <h2 id="offline">Does it work offline?</h2>
+    <p>Yes. The only exception is English translation: the first time, iOS downloads its language pack.</p>
+
+    <h2 id="voice">No Chinese voice, or it sounds robotic?</h2>
+    <p>Pindu uses the Mandarin voices on your iPhone. Settings in Pindu shows how to download a better one.</p>
+
+    <h2 id="devices">Which iPhones?</h2>
+    <p>Any iPhone on iOS 26 or later.</p>
+
+    <div class="card">
+      <p>Anything else: <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>. A screenshot helps, since Pindu collects nothing.</p>
     </div>
+  </main>
 
-    <h2>Credits</h2>
-    <p class="credits">The Zhuyin sample page in our App Store screenshots is set in 字嗨注音標楷 (Zihi Kai Standard Bopomofo) by But Ko, from the <a href="https://github.com/ButTaiwan/bpmfvs">bpmfvs</a> project, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
-  </div>
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>
+    </nav>
+    <span>© 2026 Pindu</span>
+  </footer>
+
+</div>
 </body>
 </html>

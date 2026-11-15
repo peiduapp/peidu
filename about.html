@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Pindu</title>
+<meta name="description" content="Why Pindu exists, how it reads Chinese entirely on your iPhone, and the open projects it is built on.">
+<meta name="theme-color" content="#4651B0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121216" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="brand" href="./"><img src="assets/img/icon-256.png" alt="" width="30" height="30">Pindu</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="support.html">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html" aria-current="page">About</a>
+    </nav>
+  </header>
+
+  <main id="main" class="prose">
+    <h1>About Pindu</h1>
+    <p class="intro">Pindu (<span class="zh">拼读</span>, pīndú, “sound it out and read”) is an iPhone app for people who can already speak Chinese but never learned to read it.</p>
+
+    <h2 id="why">Why it exists</h2>
+    <p>Language apps start from zero. Camera translators skip to English. Pindu puts the sounds you already know on top of the characters you don't.</p>
+
+    <h2 id="how">How it works</h2>
+    <p>Everything runs on your iPhone. No server, no account.</p>
+    <ul>
+      <li><strong>Reading:</strong> Apple Vision; Closer Look runs PaddleOCR through ONNX Runtime.</li>
+      <li><strong>Pinyin and meanings:</strong> CC-CEDICT, built in.</li>
+      <li><strong>English:</strong> Apple Translation and Apple Intelligence, on-device.</li>
+      <li><strong>Speech:</strong> your iPhone's Mandarin voices.</li>
+    </ul>
+
+    <h2 id="credits">Credits</h2>
+    <p>Also in the app under Settings → About → Licenses.</p>
+    <div class="credits">
+      <dl>
+        <dt><a href="https://www.mdbg.net/chinese/dictionary?page=cc-cedict">CC-CEDICT</a></dt>
+        <dd>Chinese–English dictionary by MDBG and its contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Based on CEDICT, © 1997–1998 Paul Andrew Denisowski.</dd>
+
+        <dt><a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR</a></dt>
+        <dd>PP-OCRv6 models behind Closer Look, by the PaddlePaddle authors, unmodified, <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</dd>
+
+        <dt><a href="https://onnxruntime.ai/">ONNX Runtime</a></dt>
+        <dd>Runs the PaddleOCR models. By Microsoft, MIT License, with its third-party notices.</dd>
+
+        <dt><a href="https://github.com/ButTaiwan/bpmfvs">字嗨注音標楷 (Zihi Kai Standard Bopomofo)</a></dt>
+        <dd>Zhuyin font in the screenshots, by But Ko, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Not in the app.</dd>
+
+        <dt>Apple frameworks</dt>
+        <dd>Vision, Translation, Apple Intelligence, and speech, built into iOS.</dd>
+      </dl>
+    </div>
+    <p>Sample pages in the screenshots were made for them, not taken from published books.</p>
+
+    <div class="card">
+      <p>Questions, bugs, ideas: <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="support.html">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>
+    </nav>
+    <span>© 2026 Pindu</span>
+  </footer>
+
+</div>
+</body>
+</html>
