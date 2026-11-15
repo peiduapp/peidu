@@ -35,10 +35,15 @@ https://pinduapp.github.io/pindu/. It stays public and separate from the private
 - **Launch state.** The hero button in `index.html` has two blocks: a "pre-launch" block that is
   live, and a "launch" block inside an HTML comment. At launch, delete the pre-launch block, move
   the launch block out of the comment, and replace `APP_STORE_URL` with the real link.
-- **Premium price.** The price appears in two places: the Premium section of `index.html` and the
-  Premium question in `support.html`. Change both together.
+- **No price on the site.** Premium is described as a one-time unlock with no subscription. The
+  App Store shows the price, so a price change never makes the site wrong. Do not add a number.
 - **Free allowances.** 10 free Closer Looks and 10 free saves are mentioned on the home page and
   the Help page.
+
+## Writing
+
+- **Short.** A headline, one line, and at most two bullets per feature; Help answers in one or
+  two lines. Show with an example or a screenshot instead of explaining. Say each thing once.
 
 ## Working with the owner
 

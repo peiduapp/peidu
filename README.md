@@ -25,9 +25,8 @@ the comment that starts `HERO BUTTON`. Delete the block marked `cta-prelaunch`, 
 `<!--` and `-->` lines around the block marked `cta-launch`, and replace `APP_STORE_URL` with the
 app's App Store link.
 
-**Change the Premium price.** It appears twice: in the Premium section of `index.html` (once in
-the paragraph, once in the Premium card) and in the "What does Premium include" answer in
-`support.html`. Change all of them.
+**Change the Premium price.** Nothing to do here: the site shows no price on purpose. Change it in
+App Store Connect.
 
 **Add or replace a screenshot.** Originals live in the app repo under `marketing/`. Shrink to
 720 pixels wide, save as WebP, and put the file in `assets/img/`.

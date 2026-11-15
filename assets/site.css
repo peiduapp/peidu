@@ -288,14 +288,8 @@ img { max-width: 100%; height: auto; }
 .premium-block h2 {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   letter-spacing: -0.02em;
-  margin: 0 0 14px;
+  margin: 0 0 32px;
   text-align: center;
-}
-.premium-block .two-sentences {
-  max-width: 720px;
-  margin: 0 auto 32px;
-  text-align: center;
-  font-size: 1.1rem;
 }
 .plans {
   display: grid;
@@ -349,19 +343,6 @@ img { max-width: 100%; height: auto; }
   padding: 1px 6px;
   font-size: 0.92em;
 }
-
-.toc {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 18px 22px;
-  margin: 0 0 8px;
-}
-.toc p { margin: 0 0 8px; font-weight: 600; }
-.toc ul { margin: 0; padding-left: 20px; columns: 1; }
-@media (min-width: 640px) { .toc ul { columns: 2; column-gap: 28px; } }
-.toc li { margin: 2px 0; break-inside: avoid; }
-.toc a { text-decoration: none; }
-.toc a:hover { text-decoration: underline; }
 
 .credits { margin-bottom: 20px; }
 .credits dl { margin: 0; }
