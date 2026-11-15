@@ -16,12 +16,12 @@ https://pinduapp.github.io/pindu/. It stays public and separate from the private
 - **Keep light and dark mode.** Accent colour is `#4651B0` in light mode and `#A2ABF2` in dark
   mode, matching the app. Shared styles live in `assets/site.css`.
 - **Positioning.** Lead with "You can already speak it. Now you can read it." Pindu is for people
-  who can speak Chinese but were never taught to read it. Do not frame it as a learn-Mandarin
+  who can speak Chinese but never learned to read it. Do not frame it as a learn-Mandarin
   app or a traveller app. No lessons, flashcards, streaks, or tutors.
 - **Keep the privacy page wording stable.** It is the text App Store Connect links to. Restyle
   freely, but change the words only when the owner asks, and update the "Last updated" date
   when you do.
-- **Do not put the owner's name on the site.** The About page says "Pindu is made by one person".
+- **Do not put the owner's name on the site,** and do not say who makes it.
 - **Credits must stay on the About page:** CC-CEDICT (CC BY-SA 4.0), PaddleOCR (Apache 2.0),
   ONNX Runtime (MIT), and the 字嗨注音標楷 font by But Ko (CC BY 4.0).
 - **Screenshots and the app icon come from the app repo** (`pinduapp/pindu-ios`, under
