@@ -29,7 +29,9 @@ app's App Store link.
 App Store Connect.
 
 **Add or replace a screenshot.** Originals live in the app repo under `marketing/`. Shrink to
-720 pixels wide, save as WebP, and put the file in `assets/img/`.
+720 pixels wide, save as WebP, and put the file in `assets/img/`. On the home page each phone is cropped
+below its content: set `--crop: 720 / H` on its `phone` div, where H is the screenshot's height in
+pixels down to about 110 pixels below the last thing worth showing.
 
 ## Contact
 
