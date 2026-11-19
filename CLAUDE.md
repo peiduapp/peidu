@@ -1,8 +1,8 @@
-# Pindu website
+# Peidu website
 
-This repo is the public website for the Pindu iPhone app, served by GitHub Pages at
-https://pinduapp.github.io/pindu/. It stays public and separate from the private app repo
-`pinduapp/pindu-ios`, because Pages builds the address from this repo's name.
+This repo is the public website for the Peidu iPhone app, served by GitHub Pages at
+https://peidu.app/ (the custom domain is set by the `CNAME` file; DNS is at Cloudflare).
+It stays public and separate from the private app repo `peiduapp/peidu-ios`.
 
 ## Rules
 
@@ -11,11 +11,14 @@ https://pinduapp.github.io/pindu/. It stays public and separate from the private
 - **Plain static HTML and CSS, no build step, no JavaScript.** Pages must work as plain files.
 - **No analytics, trackers, third-party scripts, or external fonts.** The site makes the same
   promise the app does: nothing is collected. Images and styles are served from this repo.
-- **These two paths must keep working exactly as they are**, because App Store Connect points
-  at them: `/pindu/privacy.html` and `/pindu/support.html`. Do not rename or move them.
+- **These two pages must keep their addresses**, because App Store Connect will point at them:
+  `https://peidu.app/privacy.html` and `https://peidu.app/support.html`. Do not rename or move
+  them, and do not delete the `CNAME` file.
+- **The name.** Peidu, said "pay-doo". In Chinese, 陪读 (Simplified) or 陪讀 (Traditional). Where
+  the Chinese name appears, pair it with what the app does rather than using 陪读 alone.
 - **Keep light and dark mode.** Accent colour is `#4651B0` in light mode and `#A2ABF2` in dark
   mode, matching the app. Shared styles live in `assets/site.css`.
-- **Positioning.** Lead with "You can already speak it. Now you can read it." Pindu is for people
+- **Positioning.** Lead with "You can already speak it. Now you can read it." Peidu is for people
   who can speak Chinese but never learned to read it. Do not frame it as a learn-Mandarin
   app or a traveller app. No lessons, flashcards, streaks, or tutors.
 - **Keep the privacy page wording stable.** It is the text App Store Connect links to. Restyle
@@ -24,7 +27,7 @@ https://pinduapp.github.io/pindu/. It stays public and separate from the private
 - **Do not put the owner's name on the site,** and do not say who makes it.
 - **Credits must stay on the About page:** CC-CEDICT (CC BY-SA 4.0), PaddleOCR (Apache 2.0),
   ONNX Runtime (MIT), and the 字嗨注音標楷 font by But Ko (CC BY 4.0).
-- **Screenshots and the app icon come from the app repo** (`pinduapp/pindu-ios`, under
+- **Screenshots and the app icon come from the app repo** (`peiduapp/peidu-ios`, under
   `marketing/raw/`, `marketing/design/`, and the Xcode asset catalog). Copy and shrink them into
   `assets/img/`; do not edit the originals here. Keep each image under about 100 KB.
 - **The App Store badge** in `assets/img/app-store-badge.svg` is Apple's official artwork. Do not
