@@ -40,8 +40,8 @@ It stays public and separate from the private app repo `peiduapp/peidu-ios`.
   the launch block out of the comment, and replace `APP_STORE_URL` with the real link.
 - **No price on the site.** Premium is described as a one-time unlock with no subscription. The
   App Store shows the price, so a price change never makes the site wrong. Do not add a number.
-- **Free allowances.** 10 free Closer Looks and 10 free saves are mentioned on the home page and
-  the Help page.
+- **Free allowances.** 10 free Closer Looks, 10 free saves, and one free Reader mode book of up
+  to 3 pages are mentioned on the home page and the Help page.
 
 ## Writing
 

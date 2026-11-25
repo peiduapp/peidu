@@ -112,6 +112,12 @@ img { max-width: 100%; height: auto; }
 }
 .site-nav a:hover { color: var(--fg); background: var(--card); }
 .site-nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+@media (max-width: 359px) {
+  /* The three links stay on one line beside the name on the narrowest phones. */
+  .site-header { gap: 8px; }
+  .site-nav { margin-right: -6px; }
+  .site-nav a { padding: 10px 6px; font-size: 0.9rem; }
+}
 
 /* Hero */
 
@@ -187,6 +193,10 @@ img { max-width: 100%; height: auto; }
   background: #f5f5f7;
 }
 .phone.small { width: min(270px, 62vw); border-radius: 42px; }
+@media (prefers-color-scheme: dark) {
+  /* No white block while a screenshot loads. */
+  .phone img { background: #1c1c1e; }
+}
 @media (min-width: 860px) {
   /* Whole phone visible above the fold: the screenshots are 0.46 wide per unit of height. */
   .hero .phone { width: clamp(240px, calc((100svh - 150px) * 0.46), 320px); }
